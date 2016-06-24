@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.1.9" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="ar.edu.unlam.basica2.tp4.Tragamonedas.Tambor" project="tp4-tragamonedas" 
-    file="/tp4-tragamonedas/src/ar/edu/unlam/basica2/tp4/Tragamonedas.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="159" width="169" x="191" y="312"/>    
-    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="2" language="java" name="ar.edu.unlam.basica2.tp4.Tragamonedas" project="tp4-tragamonedas" 
+  <class id="1" language="java" name="ar.edu.unlam.basica2.tp4.Tragamonedas" project="tp4-tragamonedas" 
     file="/tp4-tragamonedas/src/ar/edu/unlam/basica2/tp4/Tragamonedas.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="180" width="169" x="192" y="28"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -19,7 +10,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="ar.edu.unlam.basica2.tp4.RandomNumberGenerator" project="tp4-tragamonedas" 
+  <class id="2" language="java" name="ar.edu.unlam.basica2.tp4.RandomNumberGenerator" project="tp4-tragamonedas" 
     file="/tp4-tragamonedas/src/ar/edu/unlam/basica2/tp4/RandomNumberGenerator.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="95" width="176" x="539" y="281"/>    
@@ -29,7 +20,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="ar.edu.unlam.basica2.tp4.FixNumberGenerator" project="tp4-tragamonedas" 
+  <class id="3" language="java" name="ar.edu.unlam.basica2.tp4.FixNumberGenerator" project="tp4-tragamonedas" 
     file="/tp4-tragamonedas/src/ar/edu/unlam/basica2/tp4/FixNumberGenerator.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="621" y="117"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -38,7 +29,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="5" language="java" name="ar.edu.unlam.basica2.tp4.NumberGenerator" project="tp4-tragamonedas" 
+  <interface id="4" language="java" name="ar.edu.unlam.basica2.tp4.NumberGenerator" project="tp4-tragamonedas" 
     file="/tp4-tragamonedas/src/ar/edu/unlam/basica2/tp4/NumberGenerator.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="948" y="211"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -47,62 +38,25 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <association id="6">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="7" name="generator"/>      
-      <multiplicity id="8" minimum="0" maximum="1"/>    
+  <association id="5">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="6" name="generator">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="7" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
+    <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="9">    
-    <bendpoint x="94" y="111"/>    
-    <bendpoint x="17" y="290"/>    
-    <bendpoint x="56" y="414"/>    
-    <bendpoint x="75" y="466"/>    
-    <bendpoint x="127" y="478"/>    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="10" name="tambor3"/>      
-      <multiplicity id="11" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="12">    
-    <bendpoint x="156" y="178"/>    
-    <bendpoint x="156" y="256"/>    
-    <bendpoint x="159" y="303"/>    
-    <bendpoint x="170" y="344"/>    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="13" name="tambor1"/>      
-      <multiplicity id="14" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="15">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="5"/>  
-  </realization>  
-  <nesting id="16">    
+  <realization id="8">    
     <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="1"/>  
-  </nesting>  
-  <association id="17">    
-    <bendpoint x="136" y="146"/>    
-    <bendpoint x="77" y="236"/>    
-    <bendpoint x="83" y="360"/>    
-    <bendpoint x="130" y="404"/>    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="18" name="tambor2"/>      
-      <multiplicity id="19" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="20">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="5"/>  
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <realization id="9">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="4"/>  
   </realization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
